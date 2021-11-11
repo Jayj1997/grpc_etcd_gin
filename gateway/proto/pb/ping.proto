@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package ping;
+
+option go_package = "/proto/pb;pb";
+
+
+service Ping {
+    rpc Pong (Req) returns (Resp) {}
+}
+
+message Req {
+    string name = 1;
+}
+
+message Resp {
+    string msg = 1;
+}
