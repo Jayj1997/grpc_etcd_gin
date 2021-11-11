@@ -17,7 +17,7 @@ import (
 )
 
 const (
-	app         = "tomato/ping"
+	app         = "ping"
 	grpcAddress = "127.0.0.1:10004"
 )
 

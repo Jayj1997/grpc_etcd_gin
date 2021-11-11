@@ -22,7 +22,7 @@ func addPingRoute(rg *gin.RouterGroup) {
 	}
 
 	// 通过etcd做服务发现
-	pingConn, err := grpc.Dial("etcd:///tomato/ping", opts...)
+	pingConn, err := grpc.Dial("etcd:///ping", opts...)
 	if err != nil {
 		logrus.Errorf("try connect ping service failed")
 	}
